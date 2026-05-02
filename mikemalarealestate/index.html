@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script defer src="https://www.googletagmanager.com/gtag/js?id=G-1BPRS0TTEP"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BPRS0TTEP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -43,7 +43,6 @@
 
 <!-- ROBOTS -->
 <meta name="robots" content="index, follow">
-<meta name="google-site-verification" content="Tl5Ma7eSQlaf6DgK7wKDs_ExR1kZX4A3vS_CMNj9b5s">
 <meta name="author" content="Mike Mala Media">
 
 <!-- SCHEMA MARKUP (Local Business + Service) -->
@@ -111,11 +110,7 @@
   }
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
   :root {
     --gold: #E9A84C;
@@ -211,7 +206,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 140px 48px 80px;
+    padding: 0 48px 80px;
     position: relative;
     overflow: hidden;
     background: var(--black);
@@ -231,12 +226,6 @@
     object-fit: cover;
     object-position: center;
     z-index: 0;
-  }
-  @media (max-width: 768px) {
-    .hero-video { display: none; }
-    .hero-video-fallback {
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1208 50%, #0a0a0a 100%) !important;
-    }
   }
   .hero-video-fallback {
     position: absolute;
@@ -263,9 +252,8 @@
 
   .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     max-width: 900px;
-    padding-top: 20px;
   }
 
   .hero-tag {
@@ -447,7 +435,7 @@
   .diff-num {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 56px;
-    color: rgba(233,168,76,0.6);
+    color: var(--border-gold);
     line-height: 1;
     margin-bottom: 16px;
     letter-spacing: 2px;
@@ -904,7 +892,7 @@
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
     .nav-links { display: none; }
-    .hero { padding: 140px 24px 80px; min-height: 100svh; }
+    .hero { padding: 0 24px 64px; }
     section { padding: 72px 24px; }
     .diff-grid, .packages-grid, .why-grid { grid-template-columns: 1fr; }
     .addons-grid, .services-grid, .contact-grid { grid-template-columns: 1fr; }
@@ -1202,13 +1190,13 @@
   <div class="section-title">Recent work</div>
   <p class="section-sub">Real listings. Real results. Serving SW Ontario.</p>
   <div class="gallery-grid">
-    <div class="gallery-item gallery-large"><img src="photo2.JPG" alt="Aerial drone exterior" loading="lazy"><div class="gallery-overlay"><span>Aerial Exterior</span></div></div>
-    <div class="gallery-item"><img src="photo3.JPG" alt="Living room with fireplace" loading="lazy"><div class="gallery-overlay"><span>Living Room</span></div></div>
-    <div class="gallery-item"><img src="photo4.JPG" alt="Modern living room" loading="lazy"><div class="gallery-overlay"><span>Living Room</span></div></div>
-    <div class="gallery-item"><img src="photo5.JPG" alt="Kitchen with pendant lighting" loading="lazy"><div class="gallery-overlay"><span>Kitchen</span></div></div>
-    <div class="gallery-item"><img src="photo6.JPG" alt="Dining room" loading="lazy"><div class="gallery-overlay"><span>Dining Room</span></div></div>
-    <div class="gallery-item gallery-large"><img src="photo7.JPG" alt="Kitchen and entryway" loading="lazy"><div class="gallery-overlay"><span>Kitchen</span></div></div>
-    <div class="gallery-item"><img src="photo8.JPG" alt="Elegant entryway" loading="lazy"><div class="gallery-overlay"><span>Entryway</span></div></div>
+    <div class="gallery-item gallery-large"><img src="photo2.jpg" alt="Aerial drone exterior" loading="lazy"><div class="gallery-overlay"><span>Aerial Exterior</span></div></div>
+    <div class="gallery-item"><img src="photo3.jpg" alt="Living room with fireplace" loading="lazy"><div class="gallery-overlay"><span>Living Room</span></div></div>
+    <div class="gallery-item"><img src="photo4.jpg" alt="Modern living room" loading="lazy"><div class="gallery-overlay"><span>Living Room</span></div></div>
+    <div class="gallery-item"><img src="photo5.jpg" alt="Kitchen with pendant lighting" loading="lazy"><div class="gallery-overlay"><span>Kitchen</span></div></div>
+    <div class="gallery-item"><img src="photo6.jpg" alt="Dining room" loading="lazy"><div class="gallery-overlay"><span>Dining Room</span></div></div>
+    <div class="gallery-item gallery-large"><img src="photo7.jpg" alt="Kitchen and entryway" loading="lazy"><div class="gallery-overlay"><span>Kitchen</span></div></div>
+    <div class="gallery-item"><img src="photo8.jpg" alt="Elegant entryway" loading="lazy"><div class="gallery-overlay"><span>Entryway</span></div></div>
   </div>
   <div style="text-align:center;margin-top:40px;"><a href="https://www.instagram.com/mm.re.media" target="_blank" class="btn-outline">See more on Instagram</a></div>
 </section>
